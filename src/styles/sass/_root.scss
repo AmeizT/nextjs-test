@@ -1,0 +1,308 @@
+@use "./functions" as func;
+
+:root {
+    --snow10: #ffffff;
+    --snow20: #f8f9fa;
+    --snow30: #e6eaea;
+    --snow40: #e4e6eb;
+    --gray10: #b0b3b8;
+    --gray20: #818489;
+    --gray30: #5f6368;
+    --dark40: #3c4043;
+    --dark50: #3a3b3c;
+    --dark60: #242526;
+    --dark70: #18191a;
+    --dark80: #10100f;
+    --dark90: #000000;
+    --dark99: #000000db;
+    --sec: #f2d621;
+    --pri: #0066b2;
+    --energy: #f44336;
+    --fire: #e3d454;
+    --firebrick: #dc3545;
+    --base: #0066b2;
+    --magenta: #a16fc3;
+    --sky: #1a73e8;
+    --starbucks: #00754a;
+    --success: #27ae60;
+    --veg: #1e8e3e;
+    --grad1: linear-gradient(60deg, #faffd1 0%, #a1ffce 74%);
+    --grad2: linear-gradient(60deg, #3494e6 0%, #ec6ead 74%);
+    --grad3: linear-gradient(60deg, #cfdef3 0, #e0eafc 74%);
+    --grad4: linear-gradient(60deg, #005c97 0%, #363795 74%);
+    --grad5: linear-gradient(60deg, #e25c5a 0%, #e35d5b 74%);
+    --grad6: linear-gradient(30deg, #eef2f3 0%, #8e9eab 74%);
+    --grad7: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
+    --grad8: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    --grad9: linear-gradient(60deg, #6edcc4 0%, #1aab8b 74%);
+    --grad10: linear-gradient(315deg, #7f53ac 0%, #647dee 74%); 
+    --grad11: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); 
+    --grad12: linear-gradient(315deg, #8a5cfa 0%, #3c46fd 74%);
+    --grad13: linear-gradient(315deg, #dd5e89 0%, #f7bb97 74%);
+    --grad14: linear-gradient(315deg, #ff512f 0%, #dd2476 74%);
+    --grad15: linear-gradient(315deg, #06a99d 0%, #fca99d 74%);
+}
+
+:root {
+    --b10: 1px solid #0000001a;
+    --b20: 2px solid #0000001a;
+    --bd10: 1px solid var(--snow40);
+    --bd20: 2px solid var(--snow40);
+    --bsnow: 2px solid #ffffff;
+    --bdark: 2px solid var(--dark40);
+    --bfocus: 1px solid var(--primary);
+    --easeInOut077: cubic-bezier(0.77, 0, 0.175, 1);
+    --easeInQuad: cubic-bezier(0.26,0,0.6,0.2);
+    --easeOutQuad: cubic-bezier(0.4,0.8,0.74,1);
+    --easeInOutQuad: cubic-bezier(0.48,0.04,0.52,0.96);
+    --easeInCubic: cubic-bezier(0.4,0,0.68,0.06);
+    --easeOutCubic: cubic-bezier(0.34,1.02,0.68,1);
+    --easeInOutCubic: cubic-bezier(0.66,0,0.34,1);
+    --easeInExpo: cubic-bezier(0.66,0,0.86,0);
+    --easeOutExpo: cubic-bezier(0.16,1.08,0.38,0.98);
+    --easeInOutExpo: cubic-bezier(0.9,0,0.1,1);
+    --easeInQuart: cubic-bezier(0.52,0,0.74,0);
+    --easeOutQuart: cubic-bezier(0.26,1.04,0.54,1);
+    --easeInOutQuart: cubic-bezier(0.77,0,0.175,1);
+    --easeInBack: cubic-bezier(0.6,-0.28,0.735,0.045);
+    --easeOutBack: cubic-bezier(0.175,0.885,0.32,1.275);
+    --easeInOutBack: cubic-bezier(0.175,0.885,0.32,1.275);
+    --easeOutCirc: cubic-bezier(0.85,0,0.15,1);
+    --ffBase: '+Jakarta Sans', 'Inter', 'Open Sauce Sans', 'Segoe UI', sans-serif;
+    --ffSub: 'Inter', '+Jakarta Sans', 'Open Sauce Sans', 'Segoe UI', sans-serif;
+    --fs10: #{func.pxtorem(10)};
+    --fs12: #{func.pxtorem(12)};
+    --fs14: #{func.pxtorem(14)};
+    --fs16: #{func.pxtorem(16)};
+    --fs18: #{func.pxtorem(18)};
+    --fs20: #{func.pxtorem(20)};
+    --fs24: #{func.pxtorem(24)};
+    --fs28: #{func.pxtorem(28)};
+    --fs32: #{func.pxtorem(32)};
+    --fs48: #{func.pxtorem(48)};
+    --fs60: #{func.pxtorem(60)};
+    --fs3x: #{func.pxtovw(30, 412)};
+    --fs5x: #{func.pxtovw(50, 768)};
+    --fs7x: #{func.pxtovw(100, 412)};
+    --hs30: #{func.pxtorem(50)};
+    --hs40: #{func.pxtorem(56)};
+    --hs50: #{func.pxtorem(64)};
+    --hs60: #{func.pxtorem(72)};
+    --hs70: #{func.pxtorem(80)};
+    --shadow: 0 0 20px #00000014;
+    --shadow20: 2px 4px 12px rgb(0 0 0 / 8%);
+    --sz10: #{func.pxtorem(2)};
+    --sz20: #{func.pxtorem(4)};
+    --sz30: #{func.pxtorem(8)};
+    --sz40: #{func.pxtorem(12)};
+    --sz50: #{func.pxtorem(16)};
+    --sz60: #{func.pxtorem(32)};
+    --sz70: #{func.pxtorem(48)};
+    --sz80: #{func.pxtorem(64)};
+    --sz90: #{func.pxtorem(80)};
+    --sz95: #{func.pxtorem(96)};
+    --zx10: 100;
+    --zx20: 200;
+    --zx30: 300;
+    --zx40: 400;
+    --zx50: 500;
+    --zx99: 999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+    outline: none;
+    touch-action: manipulation;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font: normal 16px var(--ffBase);
+    color: var(--dark40);
+    background: var(--snow10);
+    @media (prefers-color-scheme: dark){
+        color: var(--snow20);
+        background: var(--dark70);
+    }
+    text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font: {
+        size: inherit;
+        family: inherit;
+    }
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+h1, h2, h3, h4, h5, 
+figure, 
+blockquote, 
+dl, dd, 
+form, 
+p, pre, small, span, time {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+input, select, textarea {
+    border: none;
+    outline: none;
+    background: none;
+    
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+small {
+    display: block;
+    font-size: var(--fs12);
+    line-height: 1.5;
+}
+
+br {
+    display: block;
+}
+
+ul[role="list"],
+ol[role="list"],
+menu,
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+
+    &:not(:first-child) > a {
+        padding: .75rem;
+    }
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark70);
+    cursor: pointer;
+    @media(prefers-color-scheme: dark){
+        color: var(--snow20);
+    }
+    -webkit-tap-highlight-color: transparent;
+    &:focus {
+        outline: none;
+    }
+    &:not([class]){
+        text-decoration-skip-ink: auto;
+    }
+}
+
+ins {
+    text-decoration: none;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets 
+.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    width: fit-content !important;
+    right: 0;
+    margin: 0 auto;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    padding: .5rem .75rem;
+    border-radius: 50px;
+    border: var(--b10);
+    @media(prefers-color-scheme: dark){
+        border: var(--bd10);
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--dark40) !important;
+}
+
+.swiper-wrapper {
+    align-items: center !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
