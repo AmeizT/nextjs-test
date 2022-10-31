@@ -7,12 +7,12 @@ export default function RootLayout({ children }){
     return (
         <html lang="en">
             <body>
-                <nav className={styles.navbar}>
+                <header className={styles.navbar}>
                     <ul className={styles.list}>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/shop">Shop</Link></li>
                     </ul>
-                </nav>
+                </header>
                 
                 <RootStyleRegistry>
                     <main className={styles.main}>
